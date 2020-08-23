@@ -1,0 +1,10 @@
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get install cmake -y
+RUN apt-get install python3 -y
+RUN apt install python3-pip -y
+RUN pip3 install opencv-python
+RUN pip3 install face-recognition
+
+CMD [ "echo", "Hello World" ]
